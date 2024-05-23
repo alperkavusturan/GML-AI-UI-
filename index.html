@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Generate Motivational Letter</title>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/check-o.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header>
+    </header>
+    <div class="container">
+        <div class="form-group">
+            <h2 class="heading-secondary">Generate a Motivation Letter</h2>
+            <form class="request-form">
+              
+            <div> 
+              <label for="employee-name">Employee Name</label>
+              <div class="name-surname">  
+                <input type="text" id="employee-name" placeholder="Name" required>
+                <input type="text" id="employee-surname" placeholder="Surname" required>
+              </div>
+            </div>
+
+                <div>
+                  <label for="employee-skills">Employee Skills</label>
+                <textarea id="employee-skills" name="employee-skills" required></textarea>
+              </div>
+
+                <div>
+                  <label for="job-description">Job Description</label>
+                <textarea id="job-description" name="job-description" required></textarea>
+              </div>
+
+              <div>
+                <label for="min-max-characters">Characters</label>
+                <div class="characters">
+                <input type="number" id="min-characters" name="min-characters" placeholder="Min" required>
+                <input type="number" id="max-characters" name="max-characters" placeholder="Max" required>
+              </div>
+            </div>
+
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+        <div class="list-group">
+          <div class="requests">
+            <div class="request" id="request1">
+              <div class="header">
+                <span class="bdg badge-done"><i class="done-icon"></i></span>
+                <h3 class="list-name">Cindy Lowe</h3>
+                <button class="accordion-toggle" onclick="toggleContent(1)">+</button>
+              </div>
+              <div class="content" id="content1">Done</div>
+            </div>
+            <div class="request" id="request2">
+              <div class="header">
+                <span class="bdg badge-done"><i class="done-icon"></i></span>
+                <h3 class="list-name">Emily Johnson</h3>
+                <button class="accordion-toggle" onclick="toggleContent(2)">+</button>
+              </div>
+              <div class="content" id="content2">Done</div>
+            </div>
+            <div class="request" id="request3">
+              <div class="header">
+                <span class="bdg badge-done"><i class="done-icon"></i></span>
+                <h3 class="list-name">Marcus Rodriguez</h3>
+                <button class="accordion-toggle" onclick="toggleContent(3)">+</button>
+              </div>
+              <div class="content" id="content3">Done</div>
+            </div>
+          
+            <div class="request" id="request4">
+              <div class="header">
+                <span class="bdg badge-error"><ion-icon name="alert-circle-outline"></ion-icon></span>
+                <h3 class="list-name">Tammy Martinez</h3>
+                <button class="accordion-toggle" onclick="toggleContent(4)">+</button>
+              </div>
+              <div class="content" id="content4">An error occurred while generating</div>
+            </div>
+          
+            <div class="request" id="request5">
+              <div class="header">
+                <span class="bdg badge-waiting"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></span>
+                <h3 class="list-name">John Doe</h3>
+                <button class="accordion-toggle" onclick="toggleContent(5)">+</button>
+              </div>
+              <div class="content" id="content5">Generating motivation letter...</div>
+            </div>
+          
+            <div class="request" id="request6">
+              <div class="header">
+                <span class="bdg badge-waiting"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></span>
+                <h3 class="list-name">Jack Ross</h3>
+                <button class="accordion-toggle" onclick="toggleContent(6)">+</button>
+              </div>
+              <div class="content" id="content6">Generating motivation letter...</div>
+            </div>
+          
+            <div class="request" id="request7">
+              <div class="header">
+                <span class="bdg badge-waiting"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></span>
+                <h3 class="list-name">Christine Sanchez</h3>
+                <button class="accordion-toggle" onclick="toggleContent(7)">+</button>
+              </div>
+              <div class="content" id="content7">Generating motivation letter...</div>
+            </div>
+          </div>
+    </div>
+    
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+</html>
